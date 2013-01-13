@@ -12,6 +12,7 @@ public:
     QMDMF();
     QMDMF(const QString &name);
 
+    void parseMDMF(QByteArray data);
 public slots:
     void onDataAvailable();
 signals:

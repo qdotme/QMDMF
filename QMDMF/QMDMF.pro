@@ -27,3 +27,8 @@ unix:!symbian {
 
 unix:DEFINES += _TTY_POSIX_
 
+header_files.files = qmdmf.h \
+                     QMDMF_global.h
+
+unix:header_files.path = /usr/include/QMDMF
+INSTALLS += header_files
