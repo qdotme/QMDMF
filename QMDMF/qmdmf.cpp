@@ -52,7 +52,7 @@ void QMDMF::parseMDMF(QByteArray data) {
             qDebug() << "Calling Name Parameter";
             break;
         default:
-            qDebug() << "Cannot understand Parameter" << data[i];
+            qDebug() << "Cannot understand Parameter: 0x" << data.mid(i, 1).toHex();
         }
         i += data.at(i+1) + 2;
     }
